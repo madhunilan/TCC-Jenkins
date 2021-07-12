@@ -2,6 +2,7 @@
 #[string]$destinationServer
 )
 #get server list from config file
+# git repo
 $serverList = Get-Content -Path C:\JenkinsScripts\PROD\Config\AUTH_ListOfServers.txt
 $session = New-PSSession -ComputerName $serverList
 $Buildresult = 0
